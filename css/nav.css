@@ -1,0 +1,191 @@
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+*{
+    padding: 0;
+    margin: 0;
+}
+html { width: 100%; height:100%;}
+
+body { 
+    height:100%;
+    font-family: sans-serif;
+}
+
+
+/* desktop version */
+.mobile-nav-toggler{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+    /* logo */
+    nav .logo{
+        position: fixed;
+        z-index: 5; /* z-index: 0, 1, 2, et 3 pour les img background et 4 pour le navbar*/
+        margin: 0 100px;
+    }
+    /* .menu-desktop */
+    .menu-desktop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 4;
+    }
+    .menu-desktop li{
+        list-style-type: none;
+    }
+    .menu-desktop a{
+        text-decoration: none;
+        color: black;
+        transition: all 0.5s;
+        padding: 20px 30px;
+    }
+    .menu-desktop a:hover{
+        color: #41c4af;
+    }
+    /* menu-area */
+    .menu-area{
+        display: flex;
+        width: 75%;
+    }
+        /* nav-left */
+        .nav-left{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: auto;
+        }
+            /* main-menu */
+            .main-menu{
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+            .main-menu .navigation{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+            .main-menu a{
+                font-size: 14px;
+                font-family: 'lato';
+                opacity: 0.9;
+            }
+            .main-menu a:hover{
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            /* nav right */
+            .nav-right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                width: 25%;
+            }
+            .nav-right a{
+                display: flex;
+                align-items: center;
+            }
+            .nav-right i{
+                size: 100px;
+            }
+            .nav-right span{
+                margin-left: 10px;
+                font-family: 'lato';
+            }
+            /* menu scroll */
+            .menu-scroll{
+                display: none;
+                position: fixed;
+                z-index: 4;
+                top: 60px;
+                height: 400px;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+            .menu-scroll#menu-scroll{
+                width: 77%;
+                left: 20%;
+            }
+            .menu-scroll#project-scroll{
+                width: 77%;
+                left: 20%;
+            }
+            .menu-scroll ul{
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                width: 30%;
+            }
+            .menu-scroll ul li.menu-scroll-item{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                width: 100%;
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(1){
+                border-left: 5px solid rgb(47, 108, 159);
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(2){
+                border-left: 5px solid rgb(135, 200, 70);
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(3){
+                border-left: 5px solid rgb(105, 114, 126);
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(4){
+                border-left: 5px solid rgb(243, 161, 53);
+            }
+            .menu-scroll ul li.menu-scroll-item a{
+                text-decoration: none;
+                padding: 30px 0;
+                font-family: 'lato';
+                color: black;
+            }
+            .menu-scroll ul li.menu-scroll-item:hover{
+                background-color: #ffffff;
+                opacity: 0.8;
+                transition: all 0.5s;
+            }
+            .menu-scroll ul li.menu-scroll-item a i{
+                margin-left: 70px;
+            }
+            .service-active{
+                display: block;
+            } 
+            .menu-scroll .service{
+                display: none;
+                height: 100%;
+                width: 70%;
+                position: relative;
+                left: 30%;
+                bottom: 316px;
+                background-color: white;
+                text-align: center;
+                font-size: 30px;
+                color: red;
+            }
+            .menu-scroll .service-active{
+                display: block;
+            }
+            /* home button */
+            .home-button{
+                display: none;
+                position: fixed;
+                left: 93%;
+                z-index: 2;
+                background-color: white;
+                box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+                border-radius: 4px;
+                padding: 8px;
+                opacity: 0.6;
+            }
+            .home-button a{
+                text-decoration: none;
+                color: black;
+                padding: 8px;
+            }
+            
