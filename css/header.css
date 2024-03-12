@@ -117,6 +117,51 @@
 .slideshow--contrast--after .slide3 {
     animation: 20s slides-set-3 infinite;
 }
+
+/* le contenu */
+.slide{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content{
+    position: relative;
+    color: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 50%;
+    padding: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin between items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transform: skew(-10deg,0deg);
+}
+.header-content1{
+    background-image: linear-gradient(to bottom, rgba(200, 200, 77, 0.2) 0, rgba(75, 75, 200, 0.2) 100%);
+}
+.header-content2, .header-content3{
+    background-image: linear-gradient(to bottom, rgba(150, 150, 75, 0.2) 0, rgba(200, 75, 75, 0.2) 100%)
+}
+
+.header-content h1{
+    font-size: 40px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.header-content h2{
+    color: rgb(17, 66, 50);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.green-line{
+    width: 2px;
+    height: 40px;
+    background-color: rgb(17, 66, 50);
+}
+
+
 @media (min-width: 600px) {
     .slideshow--contrast {
         width: 50%;

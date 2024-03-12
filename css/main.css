@@ -1,0 +1,8 @@
+.section-1{
+    height: 600px;
+    text-align: center;
+}
+.section-1 img{
+    margin: 100px auto;
+    width: 90%;
+}
