@@ -1,0 +1,173 @@
+/* menu scroll */
+.menu-scroll{
+   /*  display: none; */
+    position: fixed;
+    height: auto;
+     /* positionné pour l'animation */
+     top: -360px;
+     z-index: 4; 
+     opacity: 0;
+     transition: all 0.3s;
+}
+.menu-scroll#menu-scroll{
+    width: 58%;
+    left: 40%;
+}
+
+.menu-scroll#project-scroll{/* menu scroll projet */
+    width: 60%;
+    left: 13%;
+}
+.menu-scroll ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+   
+}
+.menu-scroll#project-scroll ul{/* menu scroll projet */
+    margin-left: auto;
+}
+.menu-scroll ul li.menu-scroll-item{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+.menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(1){
+    border-left: 5px solid rgb(47, 108, 159);
+}
+.menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(2){
+    border-left: 5px solid rgb(135, 200, 70);
+}
+.menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(3){
+    border-left: 5px solid rgb(105, 114, 126);
+}
+.menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(4){
+    border-left: 5px solid rgb(243, 161, 53);
+}
+.menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(1){/* menu scroll projet */
+    border-right: 5px solid rgb(47, 108, 159);
+}
+.menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(2){/* menu scroll projet */
+    border-right: 5px solid rgb(135, 200, 70);
+}
+.menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(3){/* menu scroll projet */
+    border-right: 5px solid rgb(105, 114, 126);
+}
+.menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(4){/* menu scroll projet */
+    border-right: 5px solid rgb(243, 161, 53);
+}
+.menu-scroll ul li.menu-scroll-item a{
+    text-decoration: none;
+    padding: 35px 0;
+    font-family: 'lato';
+    color: black;
+}
+.menu-scroll ul li.menu-scroll-item:hover{
+    background-color: #ffffff;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+.menu-scroll#menu-scroll ul li.menu-scroll-item a i{
+    margin-left: 20px;
+}
+.menu-scroll#project-scroll ul li.menu-scroll-item a i{
+    margin-right: 20px;
+}
+
+.menu-scroll div.service h2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+.menu-scroll div:nth-child(2) h2{
+    color: rgb(47, 108, 159);
+}
+.menu-scroll div:nth-child(3) h2{
+    color: rgb(135, 200, 70);
+}
+.menu-scroll div:nth-child(4) h2{
+    color: rgb(105, 114, 126);
+}
+.menu-scroll div:nth-child(5) h2{
+    color: rgb(243, 161, 53);
+}
+
+
+
+.menu-scroll .service {
+    opacity: 0;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);  
+    transition: all 0.3s; 
+}
+
+.menu-scroll#project-scroll .service{/* menu scroll projet */
+    left:50%;
+}
+
+
+/* l'affichage animé */
+/* .service-active{
+    display: block;
+} */
+.menu-scroll.service-active{
+   opacity: 10;
+    top: 60px;
+    z-index: 5; 
+    animation: 0.3s slideshow-menu-to-down;
+}
+.menu-scroll .service.service-active{
+    opacity: 10;
+    width: 70%; 
+    left: 30%;
+    animation: 0.3s slideshow-menu-to-right;
+}
+
+.menu-scroll#project-scroll .service.service-active{/* menu scroll projet */
+    
+    width: 70%; 
+    left: 0;
+    animation: 0.3s slideshow-menu-to-left;
+}
+
+/* l'animation - nav */
+@keyframes slideshow-menu-to-left {
+    0% {
+        width: 0;
+        left: 50%;
+   }
+    100% {
+        width: 70%;
+        left: 0;
+   }
+} 
+@keyframes slideshow-menu-to-right {
+    0% {
+        left: 50%;
+        width: 0;
+   }
+    100% {
+        left: 30%;
+        width: 70%;
+   }
+} 
+@keyframes slideshow-menu-to-down {
+    0% {
+        top: -250px;
+        z-index: 4; 
+   }
+   99%{
+        z-index: 4; 
+   }
+    100% {
+        top: 60px;
+        z-index: 5; 
+   }
+} 

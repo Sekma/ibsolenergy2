@@ -21,7 +21,7 @@ body {
     /* logo */
     nav .logo{
         position: fixed;
-        z-index: 5; /* z-index: 0, 1, 2, et 3 pour les img background et 4 pour le navbar*/
+        z-index: 6; /* z-index: 0, 1, 2, et 3 pour les img background et 4 pour le menu-scroll et 5 pour le navbar*/
         margin: 0 100px;
     }
     /* .menu-desktop */
@@ -33,7 +33,7 @@ body {
         box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.5);
         position: fixed;
         background-color: rgba(255, 255, 255, 0.8);
-        z-index: 4;
+        z-index: 5;
     }
     .menu-desktop li{
         list-style-type: none;
@@ -98,127 +98,7 @@ body {
                 margin-left: 10px;
                 font-family: 'lato';
             }
-            /* menu scroll */
-            .menu-scroll{
-                display: none;
-                position: fixed;
-                z-index: 4;
-                top: 60px;
-                height: auto;
-            }
-            .menu-scroll#menu-scroll{
-                width: 58%;
-                left: 40%;
-            }
             
-            .menu-scroll#project-scroll{/* menu scroll projet */
-                width: 60%;
-                left: 13%;
-            }
-            .menu-scroll ul{
-                display: flex;
-                flex-direction: column;
-                list-style-type: none;
-                width: 30%;
-                background-color: rgba(255, 255, 255, 0.8);
-            }
-            .menu-scroll#project-scroll ul{/* menu scroll projet */
-                margin-left: auto;
-            }
-            .menu-scroll ul li.menu-scroll-item{
-                display: flex;
-                align-items: center;
-                justify-content:center;
-                width: 100%;
-            }
-            .menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(1){
-                border-left: 5px solid rgb(47, 108, 159);
-            }
-            .menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(2){
-                border-left: 5px solid rgb(135, 200, 70);
-            }
-            .menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(3){
-                border-left: 5px solid rgb(105, 114, 126);
-            }
-            .menu-scroll#menu-scroll ul li.menu-scroll-item:nth-child(4){
-                border-left: 5px solid rgb(243, 161, 53);
-            }
-            .menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(1){/* menu scroll projet */
-                border-right: 5px solid rgb(47, 108, 159);
-            }
-            .menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(2){/* menu scroll projet */
-                border-right: 5px solid rgb(135, 200, 70);
-            }
-            .menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(3){/* menu scroll projet */
-                border-right: 5px solid rgb(105, 114, 126);
-            }
-            .menu-scroll#project-scroll ul li.menu-scroll-item:nth-child(4){/* menu scroll projet */
-                border-right: 5px solid rgb(243, 161, 53);
-            }
-            .menu-scroll ul li.menu-scroll-item a{
-                text-decoration: none;
-                padding: 35px 0;
-                font-family: 'lato';
-                color: black;
-            }
-            .menu-scroll ul li.menu-scroll-item:hover{
-                background-color: #ffffff;
-                opacity: 0.8;
-                transition: all 0.5s;
-            }
-            .menu-scroll#menu-scroll ul li.menu-scroll-item a i{
-                margin-left: 20px;
-            }
-            .menu-scroll#project-scroll ul li.menu-scroll-item a i{
-                margin-right: 20px;
-            }
-            .service-active{
-                display: block;
-            } 
-            .menu-scroll .service{
-                display: none;
-                height: 100%;
-                width: 70%;
-                position: absolute;
-                left: 30%;
-                top: 0;
-                background-color: rgba(255, 255, 255, 0.8);
-                
-            }
-            .menu-scroll div.service h2{
-                text-align: center;
-                margin-top: 100px;
-                font-size: 30px;
-            }
-            .menu-scroll div:nth-child(2) h2{
-                color: rgb(47, 108, 159);
-            }
-            .menu-scroll div:nth-child(3) h2{
-                color: rgb(135, 200, 70);
-            }
-            .menu-scroll div:nth-child(4) h2{
-                color: rgb(105, 114, 126);
-            }
-            .menu-scroll div:nth-child(5) h2{
-                color: rgb(243, 161, 53);
-            }
-
-            .menu-scroll#project-scroll .service{/* menu scroll projet */
-                left: 1px;
-            }
-           /*  @keyframes slideshow-hero-mobile {
-                0% {
-                    height: 0;
-               }
-                100% {
-                    height: 100%;
-               }
-            } */
-            .menu-scroll .service-active{
-                display: block;
-               /*  height: 100%; */
-               /*  animation: 0.5s slideshow-hero-mobile; */
-            }
             /* home button */
             .home-button{
                 display: none;
